@@ -1,14 +1,14 @@
 <link rel="stylesheet" href="./app.component.scss">
 
-<mat-toolbar color="primary" class="navbar">
+<nav color="primary" class="navbar bg-slate-700 text-white text-xl flex justify-between py-2 px-2">
   <span class="navbar-brand">Flex Zone Gear</span>
   
-  <span class="spacer"></span>
-
-  <button mat-button routerLink="/order" routerLinkActive="active">Track Order</button>
-  <button mat-button routerLink="/register" routerLinkActive="active">Register</button>
-  <button mat-button routerLink="/login" routerLinkActive="active">Login</button>
-</mat-toolbar>
+  <div>
+    <button mat-button routerLink="/order" routerLinkActive="active">Track Order</button>
+    <button mat-button routerLink="/register" routerLinkActive="active">Register</button>
+    <button mat-button routerLink="/login" routerLinkActive="active">Login</button>
+  </div>
+</nav>
 
 <router-outlet></router-outlet>
 
